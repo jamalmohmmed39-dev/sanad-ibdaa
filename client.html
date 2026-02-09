@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <title>شركاء النجاح | سند الإبداع</title>
+    <style>
+        body {
+            background: radial-gradient(circle at top right, #1a1a1a, #000) no-repeat fixed !important;
+            color: #fff;
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+        }
+
+        /* المنيو العلوي لضمان عدم الاختفاء */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 8%;
+            background: rgba(0, 0, 0, 0.9);
+            border-bottom: 1px solid rgba(197, 160, 89, 0.3);
+        }
+
+        header .logo { color: #fff; text-decoration: none; font-size: 1.5rem; font-weight: bold; }
+        
+        nav a { color: #fff; text-decoration: none; margin: 0 15px; transition: 0.3s; }
+        nav a:hover, .active { color: #c5a059 !important; }
+
+        /* حاوية المحتوى */
+        .main-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 85vh;
+            padding: 40px;
+        }
+
+        .content-wrapper {
+            display: flex;
+            flex-direction: row-reverse; /* صورة الشعارات يسار والكلام يمين */
+            align-items: center;
+            width: 100%;
+            max-width: 1250px;
+            gap: 60px;
+        }
+
+        /* صورة الشعارات (الجهة اليسرى) */
+        .clients-box { flex: 1; }
+        .clients-box img { width: 100%; border-radius: 20px; }
+
+        /* قسم الكلام (الجهة اليمنى) */
+        .text-box { flex: 1.2; text-align: right; }
+        .text-box h1 { font-size: 2.8rem; margin-bottom: 20px; color: white; }
+        .text-box h1 span { color: #c5a059; }
+
+        .services-list { list-style: none; padding: 0; margin: 30px 0; }
+        .services-list li { margin-bottom: 15px; font-size: 1.1rem; color: #ccc; }
+        .services-list li span { color: #c5a059; margin-left: 10px; }
+
+        /* الأزرار الذهبية - تودع اللون الأزرق */
+        .btn-group { display: flex; gap: 20px; }
+        
+        .btn-gold {
+            text-decoration: none !important;
+            color: #c5a059 !important; /* إجبار اللون الذهبي */
+            border: 1px solid #c5a059 !important;
+            padding: 12px 35px;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: 0.3s;
+            background: transparent;
+        }
+
+        .btn-gold:hover { background: #c5a059 !important; color: #000 !important; }
+
+        @media (max-width: 900px) { .content-wrapper { flex-direction: column-reverse; text-align: center; } }
+    </style>
+</head>
+<body>
+
+    <header>
+        <a href="index.html" class="logo">SANAD . سند الإبداع</a>
+        <nav>
+            <a href="index.html">الرئيسية</a>
+            <a href="about.html">من نحن</a>
+            <a href="services.html">خدماتنا</a>
+            <a href="calint.html" class="active">عملائنا</a>
+        </nav>
+        <a href="tel:0565808030" class="btn-gold" style="padding: 8px 20px;">إستشارة مجانية</a>
+    </header>
+
+    <div class="main-container">
+        <div class="content-wrapper">
+            <div class="clients-box">
+                <img src="image/clients.jpg" alt="شركاء نجاح سند الإبداع">
+            </div>
+
+            <div class="text-box">
+                <h1>نحن <span>سند الإبداع</span> للدعاية والإعلان</h1>
+                <p>وكالة متكاملة تهدف إلى بناء بصمة مميزة لعلامتك التجارية من خلال حلول مبتكرة.</p>
+                
+                <ul class="services-list">
+                    <li>🏆 تصميم الجرافيك والهوية التجارية الكاملة</li>
+                    <li>📱 إعلانات السوشيال ميديا من خلال المؤثرين</li>
+                    <li>📍 الدعاية الخارجية (Out-door) ولوحات الطرق</li>
+                </ul>
+
+                <div class="btn-group">
+                    <a href="https://wa.me/966565808030" class="btn-gold" target="_blank">تواصل واتساب</a>
+                    <a href="index.html" class="btn-gold">العودة للرئيسية</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
